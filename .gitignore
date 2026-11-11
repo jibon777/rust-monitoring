@@ -1,0 +1,11 @@
+# Rust build artifacts
+target/
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.bak
+
+# Environment & temporary
+.env

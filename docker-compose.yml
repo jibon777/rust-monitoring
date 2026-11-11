@@ -1,0 +1,15 @@
+services:
+  system-monitor:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: system-monitor
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    # pid: host enables sysinfo to monitor the actual host machine CPU & RAM instead of container slice
+    pid: host
+    environment:
+      - PORT=8080
+      - IP=0.0.0.0
+

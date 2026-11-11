@@ -1,0 +1,11 @@
+[application]
+name = "system-monitor"
+default_platform = "web"
+asset_dir = "assets"
+
+[web.app]
+title = "System Monitor"
+
+[web.watcher]
+reload_html = true
+watch_path = ["src", "assets"]
